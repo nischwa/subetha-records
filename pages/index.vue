@@ -1,12 +1,24 @@
 <template>
-  <headline headline="Welcome to my Page"/>
+  <StoryblokComponent v-if="story" :blok="story.content" />
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import Headline from "~/components/Headline.vue";
+<script>
+import { useStoryblokBridge, useStoryblokApi } from '@storyblok/nuxt-2';
 
-export default Vue.extend({
-  components: {Headline}
-})
+export default {
+  //eslint-disable-next-line
+  asyncData: async ({app}) => {
+    const storyblokApi = useStoryblokApi();
+    const { data } = await storyblokApi.get('cdn/stories/home', {
+      version: 'draft',
+    });
+    console.log(data);
+    // OR: const { data } = await app.$storyapi.get("cdn/stories/vue", { version: "draft" });
+
+    return { story: data.story };
+  },
+  mounted() {
+    useStoryblokBridge(this.story.id, (newStory) => (this.story = newStory));
+  },
+};
 </script>
