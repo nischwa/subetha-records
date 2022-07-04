@@ -2,8 +2,7 @@ name: ci
 
 on:
   push:
-    branches:
-      - main
+    branches: '**'
   pull_request:
     branches:
       - main
@@ -48,3 +47,13 @@ jobs:
 
       - name: Run tests 🧪
         run: yarn test
+  my-own-workflow:
+    needs: ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Validation
+        run:
+          echo ${{ github.ref_name }}
+          echo ${{ github.event_name }}
+
