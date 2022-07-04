@@ -84,10 +84,12 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: yarn
 
-      - name: build & deploy
+      - name: build static site
         run: yarn generate
         env:
           STORYBLOK_TOKEN: ${{ secrets.STORYBLOK_TOKEN_DEV }}
       - name: list
         run: ls && ls dist
+      - name: deploy to netlify
+        run: npx netlify deploy --site ${{ secrets.DEV_NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
