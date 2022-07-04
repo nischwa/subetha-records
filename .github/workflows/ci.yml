@@ -85,5 +85,9 @@ jobs:
         run: yarn
 
       - name: build & deploy
-        run: yarn generate && ls dist
+        run: yarn generate
+        env:
+          STORYBLOK_TOKEN: ${{ secrets.STORYBLOK_TOKEN_DEV }}
+      - name: list
+        run: ls && ls dist
 
