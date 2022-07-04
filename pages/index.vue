@@ -6,7 +6,7 @@
 import { useStoryblokBridge, useStoryblokApi } from '@storyblok/nuxt-2';
 
 export default {
-  //eslint-disable-next-line
+  // eslint-disable-next-line
   asyncData: async ({app}) => {
     const storyblokApi = useStoryblokApi();
     const { data } = await storyblokApi.get('cdn/stories/home', {
