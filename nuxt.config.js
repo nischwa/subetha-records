@@ -37,7 +37,6 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     ['@storyblok/nuxt-2/module', { accessToken: process.env.STORYBLOK_TOKEN }],
-    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
