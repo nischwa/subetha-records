@@ -22,8 +22,7 @@ export default class Headline extends Vue {
 </script>
 
 <style lang="scss">
-  .headline {
-    font-family: sans-serif;
-    text-align: center;
-  }
+.headline {
+  text-align: center;
+}
 </style>
