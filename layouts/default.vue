@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader v-if="headerData?.story" :blok="headerData?.story?.content" />
-    <main>
+    <main class="grid">
       <Nuxt />
     </main>
   </div>

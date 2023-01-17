@@ -2,7 +2,9 @@
 @import './_fonts.scss';
 @import './_typography.scss';
 @import './_colors.scss';
-@import './spacings';
+@import './_spacings.scss';
+@import './_mixins.scss';
+@import './_basic-grid.scss';
 
 html {
   font-family: SourceSansPro, sans-serif;
@@ -10,6 +12,15 @@ html {
   font-size: var(--step-0);
   color: $primary-text;
 }
+
+main {
+  > * {
+    grid-column-start: 2;
+    grid-column-end: -2;
+  }
+}
+
+
 
 a:hover, a:focus, a.nuxt-link-active {
   text-decoration: underline;
