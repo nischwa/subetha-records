@@ -1,5 +1,5 @@
 <template>
-  <h1 class="headline">{{ blok.headline }}</h1>
+  <h1 class="headline headline--order-3">{{ blok.headline }}</h1>
 </template>
 
 <script lang="ts">
@@ -20,9 +20,3 @@ export default class Headline extends Vue {
   }
 }
 </script>
-
-<style lang="scss">
-.headline {
-  text-align: center;
-}
-</style>
