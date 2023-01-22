@@ -1,5 +1,11 @@
 <template>
   <section style="padding: 1rem;">
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet, <em>consectetur adipisicing elit. Asperiores</em> delectus dolores dolorum id ipsum laboriosam odio
+        <a href="#">Click here this is a link</a> praesentium similique, voluptate! Accusantium, <strong>aliquid autem consequuntur cum</strong> aliquid consequuntur cumque earum expedita facere molestiae odit temporibus!
+      </p>
+    </article>
     <h1 class="headline--order-1">Headline Order 1</h1>
     <p>
       Above you see a headline with the class <code>headline--order-1</code>
