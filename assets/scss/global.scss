@@ -7,8 +7,8 @@
 @import './_basic-grid.scss';
 
 html {
-  font-family: SourceSansPro, sans-serif;
-  font-weight: 400;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 200;
   font-size: var(--step-0);
   color: $primary-text;
 }
@@ -20,6 +20,9 @@ main {
   }
 }
 
+strong {
+  font-weight: 400;
+}
 
 
 a:hover, a:focus, a.nuxt-link-active {

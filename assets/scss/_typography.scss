@@ -11,17 +11,6 @@
   --step-6: clamp(2.99rem, calc(2.37rem + 3.10vw), 4.77rem);
 }
 
-// TODO: are those needed?
-// $size--step-minus-2: var(--step--2);
-// $size--step-minus-1: var(--step--1);
-// $size--step-0: var(--step-0);
-// $size--step-1: var(--step-1);
-// $size--step-2: var(--step-2);
-// $size--step-3: var(--step-3);
-// $size--step-4: var(--step-4);
-// $size--step-5: var(--step-5);
-// $size--step-6: var(--step-6);
-
 .headline--order-1 {
   font-size: var(--step-6);
   margin: var(--space-3xl) 0;
