@@ -24,8 +24,18 @@ strong {
   font-weight: 400;
 }
 
-
 a:hover, a:focus, a.nuxt-link-active {
   text-decoration: underline;
+  color: $accent-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+time {
+  // font-style: italic;
+  font-weight: 400;
   color: $accent-color;
 }

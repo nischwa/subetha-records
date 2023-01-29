@@ -1,0 +1,47 @@
+{
+  "story": {
+    "name": "Our first Article",
+    "created_at": "2023-01-28T21:59:25.351Z",
+    "published_at": null,
+    "id": 253866158,
+    "uuid": "050056d3-00f1-4a17-bde9-9be68d497305",
+    "content": {
+      "_uid": "0b0c9a59-8841-491f-bf04-26a8dc71b88a",
+      "image": {
+        "id": 7029410,
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "filename": "https://a.storyblok.com/f/164605/1920x2880/36680cbf1f/brooke-cagle-otweoxmkdka-unsplash.jpg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "is_external_url": false
+      },
+      "article": "I'm baby blue bottle knausgaard meh, shoreditch lumbersexual taxidermy irony affogato gastropub taiyaki. Tattooed beard vibecession kogi gochujang single-origin coffee aesthetic Brooklyn disrupt. Hot chicken la croix taiyaki chambray, lo-fi brunch umami venmo chartreuse humblebrag dreamcatcher tumeric +1. Polaroid flexitarian health goth cloud bread post-ironic, lo-fi tonx palo santo fingerstache cliche sartorial forage skateboard.",
+      "headline": "You won't believe what happend",
+      "component": "Article",
+      "published": "2023-01-28 23:01",
+      "_editable": "\u003c!--#storyblok#{\"name\": \"Article\", \"space\": \"164605\", \"uid\": \"0b0c9a59-8841-491f-bf04-26a8dc71b88a\", \"id\": \"253866158\"}--\u003e"
+    },
+    "slug": "our-first-article",
+    "full_slug": "blog/our-first-article",
+    "sort_by_date": null,
+    "position": 0,
+    "tag_list": [],
+    "is_startpage": false,
+    "parent_id": 253866154,
+    "meta_data": null,
+    "group_id": "39ea4e96-86b3-4f98-824d-1c8fc8624986",
+    "first_published_at": null,
+    "release_id": null,
+    "lang": "default",
+    "path": null,
+    "alternates": [],
+    "default_full_slug": null,
+    "translated_slugs": null
+  },
+  "cv": 1674943311,
+  "rels": [],
+  "links": []
+}
