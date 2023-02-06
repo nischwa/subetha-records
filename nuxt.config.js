@@ -24,6 +24,13 @@ export default {
    */
   css: ['~/assets/scss/global.scss'],
 
+  /*
+   ** Makes Env Variables available
+   */
+  env: {
+    storyblokToken: process.env.STORYBLOK_TOKEN,
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
   ],

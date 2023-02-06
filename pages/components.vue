@@ -1,6 +1,7 @@
 <template>
  <section>
-   <NewsItem v-if="news" :blok="news.content"/>
+   <NewsItem v-if="news" :article="news.content"/>
+   <NewsItem v-if="news" :article="news.content"/>
  </section>
 </template>
 <script>

@@ -19,3 +19,4 @@ export interface IStoryBlokLink {
   linktype: string;
   url: string;
 }
+

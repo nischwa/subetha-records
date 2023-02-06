@@ -14761,6 +14761,11 @@ storyblok-js-client@^4.5.8:
   resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.5.8.tgz#862f67d4f25b6c50334e6965bf27f6b6a755ccae"
   integrity sha512-0Wp7Kn4RdKaKRgMmNDu8c6OC81x1mgeri4ziKDY9BsUZEIGLTNw8KFIWlHYACgMnJQn/6qZaV9kGo8IY4hv6GA==
 
+storyblok-js-client@^5.4.1:
+  version "5.4.1"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.4.1.tgz#2cbf69fae2d39f7c989afa20ccf0ac1eac557e42"
+  integrity sha512-eEIhPzEmuOKkApOWnjTnC/psCkucHEJEkTH6V31mvdrFQ9Zt7Vbof7sA7KDMpA8wMZEfoAxIPeeOXMlSmELNnA==
+
 stream-browserify@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-2.0.2.tgz#87521d38a44aa7ee91ce1cd2a47df0cb49dd660b"

@@ -2,11 +2,11 @@
   <article class="news-item">
     <div class="text-wrapper">
       <header class="news-item__header">
-        <h3 class="headline headline--order-3">{{blok?.headline}}</h3>
+        <h3 class="headline headline--order-3">{{article?.headline}}</h3>
         <p class="published-date">published on <time>{{publishedDate}}</time></p>
       </header>
       <p class="main-article">
-        {{blok?.article}}
+        {{article?.article}}
       </p>
     </div>
 
@@ -22,7 +22,7 @@ import {Component, Prop} from "nuxt-property-decorator";
 import Vue from "vue";
 import {IStoryBlokAsset} from "~/interfaces/storyblok.interface";
 
-export interface INewsItems {
+export interface INewsItem {
   headline: string;
   published: string;
   image: IStoryBlokAsset;
@@ -31,15 +31,15 @@ export interface INewsItems {
 
 @Component
 export default class NewsItem extends Vue {
-  @Prop() blok!: INewsItems;
+  @Prop() article!: INewsItem;
 
   public get publishedDate(): string {
-    return new Date(this.blok?.published)?.toLocaleDateString();
+    return new Date(this.article?.published)?.toLocaleDateString();
   }
 
   public get image(): IStoryBlokAsset | null {
-    if (!this.blok?.image.filename) return null;
-    return this.blok?.image;
+    if (!this.article?.image?.filename) return null;
+    return this.article?.image;
   }
 }
 </script>
@@ -56,6 +56,7 @@ export default class NewsItem extends Vue {
   @include from-tablet-up {
     flex-direction: row;
     gap: 1rem;
+    padding-bottom: 2rem;
 
     & > * {
       flex: 1 1 0;
